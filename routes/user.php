@@ -10,3 +10,5 @@
 | contains the "user" middleware group. Now create something great!
 |
 */
+
+Route::get('/dashboard','DashboardController@show');
