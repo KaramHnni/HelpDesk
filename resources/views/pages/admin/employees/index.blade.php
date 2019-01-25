@@ -32,8 +32,8 @@ Tableau de Bord
                 <td style="width:10%;" class="py-2 px-2 border-b border-solid border-grey-lighter">{{$employé->user->email}}</td>
                     <td style="width:12%;" class="py-2 px-2 border-b border-solid border-grey-lighter">{{$employé->grade}}</td>
                     <td style="width:10%;" class="py-2 px-2 border-b border-solid border-grey-lighter">{{$employé->departement->nom}}</td>
-                    <td style="width:5%;" class="py-2 px-2 border-b border-solid border-grey-lighter">{{$employé->bureau}}</td>
-                    <td style="width:7%" class="py-2  px-2  border-b border-solid border-grey-lighter"><span class="rounded inline-block px-2 py-2 bg-green-light text-white">{{$employé->Status}}</span></td>
+                    <td style="width:5%;" class="py-2 px-2 border-b border-solid border-grey-lighter">{{$employé->Bureau}}</td>
+                    <td style="width:7%" class="py-2  px-2  border-b border-solid border-grey-lighter"><span class="rounded inline-block px-2 py-2 bg-green-light text-white">{{$employé->StatusName}}</span></td>
                     <td style="width:5%;"class="py-2  px-2  border-b border-solid border-grey-lighter text-red-dark">suspendre</td>
                     <td style="width:5%;"class=" py-2  px-2  border-b border-solid border-grey-lighter text-red-dark">supprimer</td>
                 </tr>
