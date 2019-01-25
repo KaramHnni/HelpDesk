@@ -7,5 +7,7 @@ use App\Http\Controllers\Controller;
 
 class ConnexionController extends Controller
 {
-    //
+    public function show(){
+        return view('pages.admin.auth.connexion');
+    }
 }
