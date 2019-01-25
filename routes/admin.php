@@ -23,5 +23,7 @@ Route::group(['middleware' => 'auth:admin'],function(){
         route::get('/','IndexController@show')->name('admin.employees');
         route::get('/create','CreateController@show')->name('admin.employees.create');
         route::post('/create','CreateController@create');
+        route::get('/suspendre','StatusController@suspendre')->name('admin.employees.suspendre');
+        route::get('/valider','StatusController@valider')->name('admin.employees.valider');
     });
 });
