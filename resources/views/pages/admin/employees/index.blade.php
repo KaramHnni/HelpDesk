@@ -13,6 +13,7 @@ Tableau de Bord
                 <h2 class="">Les Employés</h2>
                 <a href="{{route('admin.employees.create')}}" class="bg-blue-dark py-2 font-bold rounded text-white px-4">+</a>
             </div>
+            
             <table class="w-full border-l border-r border-grey-lighter border-solid  mt-8">
                 <tr class="text-left py-4 bg-grey-lighter">
                     <td class="py-4 px-2  text-grey-darker">Nom</td>
