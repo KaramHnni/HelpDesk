@@ -13,7 +13,8 @@
 
 </head>
 <body>
+    <div class=" h-screen bg-grey-lightest">
         @yield('main-content')
-        
+    </div>
 </body>
 </html>

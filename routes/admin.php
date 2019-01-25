@@ -17,6 +17,9 @@ route::post('/connexion','Auth\ConnexionController@auth');
 route::get('/deconnexion','Auth\LogoutController@auth')->name('admin.deconnexion');
 
 Route::group(['middleware' => 'auth:admin'],function(){
-
     route::get('/dashboard','DashboardController@show')->name('admin.dashboard');
+
+    route::group(['prefix' => 'employees' , 'namespace' => 'Employees'],function(){
+        route::get('/','IndexController@show')->name('admin.employees');
+    });
 });
