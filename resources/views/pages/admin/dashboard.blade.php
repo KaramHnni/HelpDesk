@@ -7,9 +7,8 @@ Tableau de Bord
 @include('components.admin.navigation')
 <div class="flex">
 @include('components.admin.sidebar')
-
 <div>
- 
+    
 </div>
 
 </div>
