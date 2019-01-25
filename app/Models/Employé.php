@@ -29,6 +29,12 @@ class Employé extends Model
 
     }
 
+    public function user(){
+
+        return $this->hasOne('App\Models\User','id','user_id');
+    }
+
+    
     public function departement(){
 
         return $this->hasOne('\App\Models\Departement','id','departement_id');
