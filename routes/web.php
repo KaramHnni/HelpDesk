@@ -12,3 +12,4 @@
 */
 
 route::get('/connexion','Site\Auth\ConnexionController@show')->name('login');
+route::post('/connexion','Site\Auth\ConnexionController@show');
