@@ -22,5 +22,6 @@ Route::group(['middleware' => 'auth:admin'],function(){
     route::group(['prefix' => 'employees' , 'namespace' => 'Employees'],function(){
         route::get('/','IndexController@show')->name('admin.employees');
         route::get('/create','CreateController@show')->name('admin.employees.create');
+        route::post('/create','CreateController@create');
     });
 });
