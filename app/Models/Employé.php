@@ -14,4 +14,9 @@ class Employé extends Model
      * @var bool
      */
     public $timestamps = false;
+
+    public function departement(){
+
+        return $this->hasOne('\App\Models\Departement','id','departement_id');
+    }
 }
