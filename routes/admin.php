@@ -13,3 +13,8 @@
 
 route::get('/connexion','Auth\ConnexionController@show')->name('admin.login');
 route::post('/connexion','Auth\ConnexionController@auth');
+
+route::group(['middelware' =>'auth:admin'],function(){
+
+    route::get('/dashboard','DashboardController@show')->name('admin.dashboard');
+});
