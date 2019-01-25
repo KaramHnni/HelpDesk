@@ -11,4 +11,4 @@
 |
 */
 
-Route::get('/dashboard','DashboardController@show');
+Route::get('/dashboard','DashboardController@show')->name('user.dashboard');
