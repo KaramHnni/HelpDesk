@@ -32,7 +32,7 @@ class Employé extends Model
 
     public function getFullNameAttribute(){
 
-        return $this->nom . $this->prenom ;
+        return $this->nom ." ". $this->prenom ;
     }
 
     public function user(){
