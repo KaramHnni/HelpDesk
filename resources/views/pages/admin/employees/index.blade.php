@@ -11,7 +11,7 @@ Tableau de Bord
              <div style="width:97%;" class="mx-auto h-screen my-4 px-2 py-16 bg-white">
                 <div class="flex justify-between items-center px-8">
                 <h2 class="">Les Employés</h2>
-                <a href="#" class="bg-blue-dark py-2 font-bold rounded text-white px-4">+</a>
+                <a href="{{route('admin.employees.create')}}" class="bg-blue-dark py-2 font-bold rounded text-white px-4">+</a>
             </div>
             <table class="w-full border-l border-r border-grey-lighter border-solid  mt-8">
                 <tr class="text-left py-4 bg-grey-lighter">
