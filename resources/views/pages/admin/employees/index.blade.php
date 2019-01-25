@@ -34,8 +34,12 @@ Tableau de Bord
                     <td style="width:10%;" class="py-2 px-2 border-b border-solid border-grey-lighter">{{$employé->departement->nom}}</td>
                     <td style="width:5%;" class="py-2 px-2 border-b border-solid border-grey-lighter">{{$employé->Bureau}}</td>
                     <td style="width:7%" class="py-2  px-2  border-b border-solid border-grey-lighter"><span class="rounded inline-block px-2 py-2 bg-green-light text-white">{{$employé->StatusName}}</span></td>
-                    <td style="width:5%;"class="py-2  px-2  border-b border-solid border-grey-lighter text-red-dark">suspendre</td>
-                    <td style="width:5%;"class=" py-2  px-2  border-b border-solid border-grey-lighter text-red-dark">supprimer</td>
+                    @if($employé->status == 1) 
+                    <td style="width:5%;"class=" py-2  px-2  border-b border-solid border-grey-lighter text-red"><a href="{{Route('admin.employees.suspendre',$employé->id)}}">suspendre</a></td>
+                    @endif
+                    @if($employé->status== 0)
+                    <td style="width:5%;"class=" py-2  px-2  border-b border-solid border-grey-lighter text-blue-dark"><a href="{{Route('admin.employees.valider',$employé->id)}}">valider</a></td>
+                   @endif
                 </tr>
                 @endforeach
             </table>

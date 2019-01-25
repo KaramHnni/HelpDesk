@@ -17,12 +17,12 @@ class Employé extends Model
 
     public function getStatusNameAttribute(){
 
-        if($this->status = 1){
+        if($this->status == 1){
 
             return 'valide';
         }
 
-        if($this->status = 0){
+        if($this->status == 0){
 
             return 'suspendu';
         }
@@ -43,13 +43,13 @@ class Employé extends Model
     public function valider(){
 
         $this->status = 1;
-        $this->updated_now = now();
+        $this->updated_at = now();
         $this->save();
     }
     public function suspendre(){
 
         $this->status = 0;
-        $this->updated_now = now();
+        $this->updated_at = now();
         $this->save();
     }
 
