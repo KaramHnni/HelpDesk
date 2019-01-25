@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>@yield('page-title')</title>
     <link rel="stylesheet" href="{{asset('/assets/css/tailwind.css')}}">
+    <link rel="stylesheet" href="{{asset('/assets/css/admin.css')}}">
+
+
     
 
 </head>
