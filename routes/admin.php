@@ -12,3 +12,4 @@
 */
 
 route::get('/connexion','Auth\ConnexionController@show')->name('admin.login');
+route::post('/connexion','Auth\ConnexionController@auth');
