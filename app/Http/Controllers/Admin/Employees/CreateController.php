@@ -15,5 +15,12 @@ class CreateController extends Controller
                 'departements' => Departement::all(),
 
         ]);
+
+            }
+
+    public function create(Request $request){
+
+        
+
     }
 }
