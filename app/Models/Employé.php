@@ -40,6 +40,18 @@ class Employé extends Model
         return $this->hasOne('App\Models\User','id','user_id');
     }
 
+    public function valider(){
+
+        $this->status = 1;
+        $this->updated_now = now();
+        $this->save();
+    }
+    public function suspendre(){
+
+        $this->status = 0;
+        $this->updated_now = now();
+        $this->save();
+    }
 
     public function departement(){
 
