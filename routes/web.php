@@ -11,7 +11,4 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
+route::get('/connexion','Site\Auth\ConnexionController@show')->name('login');
