@@ -11,4 +11,4 @@
 |
 */
 
-route::get('/connexion','Admin\Auth\ConnexionController@show')->name('admin.login');
+route::get('/connexion','Auth\ConnexionController@show')->name('admin.login');
