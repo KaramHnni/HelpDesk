@@ -15,6 +15,20 @@ class Employé extends Model
      */
     public $timestamps = false;
 
+    public function getStatusNameAttribute(){
+
+        if($this->status = 1){
+
+            return 'valide';
+        }
+
+        if($this->status = 0){
+
+            return 'suspendu';
+        }
+
+    }
+
     public function departement(){
 
         return $this->hasOne('\App\Models\Departement','id','departement_id');
