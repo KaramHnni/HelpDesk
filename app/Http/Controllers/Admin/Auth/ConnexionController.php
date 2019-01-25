@@ -11,7 +11,7 @@ class ConnexionController extends Controller
         return view('pages.admin.auth.connexion');
     }
 
-    public function show(Request $request){
+    public function auth(Request $request){
 
         $credentials = $request->only('email,password');
 
