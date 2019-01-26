@@ -18,8 +18,7 @@ class ConnexionController extends Controller
 
         if(Auth::guard('web')->attempt($credentials)){
 
-            return redirect()->intended('user/dashboard');
-        
+            return redirect()->intended('user/dashboard');        
         }
         else{
 

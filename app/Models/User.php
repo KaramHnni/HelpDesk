@@ -30,5 +30,17 @@ class User extends Authenticatable
 
         return $this->hasOne('\App\Models\Maintenance','user_id','id');
     }
+
+    public function getTypeNameAttribute(){
+
+        if($this->type == 0 ){
+
+            return 'employé';
+        }
+        if($this->type == 1 ){
+
+            return 'maintenance';
+        }
+    }
     
 }
