@@ -30,6 +30,8 @@ Route::group(['middleware' => 'auth:admin'],function(){
     route::group(['prefix' => 'maintenances' , 'namespace' => 'Maintenances'],function(){
 
         route::get('/','IndexController@show')->name('admin.maintenances');
+        route::get('/create','CreateController@show')->name('admin.maintenances.create');
+        route::post('/create','CreateController@create');
 
 
     });
