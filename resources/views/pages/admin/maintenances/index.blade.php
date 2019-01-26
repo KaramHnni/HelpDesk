@@ -36,7 +36,7 @@ Maintenances
                     @if($maintenance->status== 0)
                     <td style="width:5%;"class=" py-2  px-2  border-b border-solid border-grey-lighter "><a class="text-blue" href="{{route('admin.maintenances.valider',$maintenance->id)}}">valider</a></td>
                    @endif
-                   <td style="width:5%;"class=" py-2  px-2  border-b border-solid border-grey-lighter "><a class="text-red-dark" href="#">supprimer</a></td>
+                <td style="width:5%;"class=" py-2  px-2  border-b border-solid border-grey-lighter "><a class="text-red-dark" href="{{route('admin.maintenances.supprimer',$maintenance->id)}}">supprimer</a></td>
 
                 </tr>
                 @endforeach
