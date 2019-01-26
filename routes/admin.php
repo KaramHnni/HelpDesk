@@ -27,4 +27,10 @@ Route::group(['middleware' => 'auth:admin'],function(){
         route::get('/{id}/valider','StatusController@valider')->name('admin.employees.valider');
         route::get('/{id}/supprimer','DeleteController@supprimer')->name('admin.employees.supprimer');
     });
+    route::group(['prefix' => 'maintenances' , 'namespace' => 'Maintenances'],function(){
+
+        
+
+    });
+
 });
