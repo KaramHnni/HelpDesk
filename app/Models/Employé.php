@@ -29,7 +29,10 @@ class Employé extends Model
 
     }
 
+    public function getInitialsAttribute(){
 
+        return substr($this->nom,0,1) ." ". substr($this->prenom,0,1);
+    }
     public function getFullNameAttribute(){
 
         return $this->nom ." ". $this->prenom ;

@@ -22,6 +22,9 @@ class User extends Authenticatable
      */
     public $timestamps = false;
 
-    
+    public function Employé(){
+
+        return $this->hasOne('\App\Models\Employé','user_id','id');
+    }
     
 }
