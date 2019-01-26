@@ -47,7 +47,7 @@ Tableau de Bord
             </table>
             @else
 
-            <h1 class="text-center text-grey-dark">Aucun Employé</h1>
+            <h3 class="text-center mt-8 text-grey-dark">Aucun Employé n'a été trouvé</h3>
             @endif
         </div>
 
