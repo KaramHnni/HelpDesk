@@ -31,10 +31,10 @@ Maintenances
                     <td style="width:12%;" class="py-2 px-2 border-b border-solid border-grey-lighter">{{$maintenance->grade}}</td>
                 <td style="width:7%" class="py-2  px-2  border-b border-solid border-grey-lighter"><span class="rounded inline-block px-2 py-2 bg-green-light text-white">{{$maintenance->StatusName}}</span></td>
                     @if($maintenance->status == 1) 
-                    <td style="width:5%;"class=" py-2  px-2  border-b border-solid border-grey-lighter "><a  class="text-red-dark "href="">suspendre</a></td>
+                <td style="width:5%;"class=" py-2  px-2  border-b border-solid border-grey-lighter "><a  class="text-red-dark "href="{{route('admin.maintenances.suspendre',$maintenance->id)}}">suspendre</a></td>
                     @endif
                     @if($maintenance->status== 0)
-                    <td style="width:5%;"class=" py-2  px-2  border-b border-solid border-grey-lighter "><a class="text-blue" href="#">valider</a></td>
+                    <td style="width:5%;"class=" py-2  px-2  border-b border-solid border-grey-lighter "><a class="text-blue" href="{{route('admin.maintenances.valider',$maintenance->id)}}">valider</a></td>
                    @endif
                    <td style="width:5%;"class=" py-2  px-2  border-b border-solid border-grey-lighter "><a class="text-red-dark" href="#">supprimer</a></td>
 
