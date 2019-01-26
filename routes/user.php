@@ -11,4 +11,4 @@
 |
 */
 
-Route::get('/dashboard','Employés/DashboardController@show')->name('user.employés.dashboard');
+Route::get('/dashboard','Employés\DashboardController@show')->name('user.employés.dashboard');
