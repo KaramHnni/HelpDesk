@@ -15,7 +15,6 @@ class DeleteController extends Controller
         $user = User::where('id',$employé->user_id);
         $employé->delete();   
         $user->delete();
-
         return redirect()->back()->with(['deleted' => true]);
     }
 }
