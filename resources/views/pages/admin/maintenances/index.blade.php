@@ -11,7 +11,7 @@ Maintenances
              <div style="width:97%;" class="mx-auto h-screen my-4 px-2 py-16 bg-white">
                 <div class="flex justify-between items-center px-8">
                 <h2 class="">Les Agents de maintenances</h2>
-                <a href="#" class="bg-blue-dark py-2 font-bold rounded text-white px-4">+</a>
+                <a href="{{route('admin.maintenances.create')}}" class="bg-blue-dark py-2 font-bold rounded text-white px-4">+</a>
             </div>
             @if($maintenances->count()> 0 ) 
             <table class="w-full border-l border-r border-grey-lighter border-solid  mt-8">
