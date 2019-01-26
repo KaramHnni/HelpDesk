@@ -34,6 +34,7 @@ Route::group(['middleware' => 'auth:admin'],function(){
         route::post('/create','CreateController@create');
         route::get('/{id}/suspendre','StatusController@suspendre')->name('admin.maintenances.suspendre');
         route::get('/{id}/valider','StatusController@valider')->name('admin.maintenances.valider');
+        route::get('/{id}/supprimer','DeleteController@supprimer')->name('admin.maintenances.supprimer');
 
 
     });
