@@ -26,14 +26,14 @@ Maintenances
                     <td></td>
                 
                 </tr>
-                @foreach($maintenaces as $maintenance)
+                @foreach($maintenances as $maintenance)
                 <tr>
                 <td style="width:15%;line-height:1.66;" class="py-2 px-2 border-b border-solid border-grey-lighter"></td>
                 <td style="width:10%;" class="py-2 px-2 border-b border-solid border-grey-lighter"></td>
                     <td style="width:12%;" class="py-2 px-2 border-b border-solid border-grey-lighter"></td>
                     <td style="width:10%;" class="py-2 px-2 border-b border-solid border-grey-lighter"></td>
                     <td style="width:5%;" class="py-2 px-2 border-b border-solid border-grey-lighter"></td>
-                    <td style="width:7%" class="py-2  px-2  border-b border-solid border-grey-lighter"><span class="rounded inline-block px-2 py-2 bg-green-light text-white">{{$employé->StatusName}}</span></td>
+                    <td style="width:7%" class="py-2  px-2  border-b border-solid border-grey-lighter"><span class="rounded inline-block px-2 py-2 bg-green-light text-white"></span></td>
                     @if($maintenance->status == 1) 
                     <td style="width:5%;"class=" py-2  px-2  border-b border-solid border-grey-lighter "><a  class="text-red-dark "href="">suspendre</a></td>
                     @endif
