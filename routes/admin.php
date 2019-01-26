@@ -29,7 +29,8 @@ Route::group(['middleware' => 'auth:admin'],function(){
     });
     route::group(['prefix' => 'maintenances' , 'namespace' => 'Maintenances'],function(){
 
-        
+        route::get('/','IndexController@show')->name('admin.maintenances');
+
 
     });
 
