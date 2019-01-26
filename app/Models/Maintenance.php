@@ -43,6 +43,19 @@ class Maintenance extends Model
         return $this->hasOne('App\Models\User','id','user_id');
     }
 
+    public function estValide(){
+
+        if($this->status == 1){
+
+            return true;
+        }
+        else{
+
+            return false;
+        }
+
+        
+    }
     public function valider(){
 
         $this->status = 1;

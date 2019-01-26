@@ -29,7 +29,23 @@ Maintenances
                 <td style="width:15%;line-height:1.66;" class="py-2 px-2 border-b border-solid border-grey-lighter">{{$maintenance->FullName}}</td>
                 <td style="width:10%;" class="py-2 px-2 border-b border-solid border-grey-lighter">{{$maintenance->user->email}}</td>
                     <td style="width:12%;" class="py-2 px-2 border-b border-solid border-grey-lighter">{{$maintenance->grade}}</td>
-                <td style="width:7%" class="py-2  px-2  border-b border-solid border-grey-lighter"><span class="rounded inline-block px-2 py-2 bg-green-light text-white">{{$maintenance->StatusName}}</span></td>
+                <td style="width:2%" class="py-2  px-2  border-b border-solid border-grey-lighter">
+                    @if($maintenance->estValide())
+                        <div style="background:rgb(120, 221, 178,0.2);"class="rounded inline-block px-2 py-2  text-grey-darker text-sm flex items-center justify-around ">
+                            <svg  height="10" width="8" >
+                                <circle cx="4" cy="5" r="4" fill="rgb(120, 221, 178)" />
+                            </svg>
+                            <span>{{$maintenance->StatusName}}</span>
+                        </div>
+                            @endif
+                            @if(!$maintenance->estValide())
+                            <div class=" bg-red-lightest rounded inline-block px-2 py-2  text-grey-darker text-sm flex items-center justify-around ">
+                                    <svg  height="10" width="8" >
+                                        <circle cx="4" cy="5" r="4" fill="red" />
+                                    </svg>
+                                    <span>{{$maintenance->StatusName}}</span>
+                                </div>
+                            @endif</td>
                     @if($maintenance->status == 1) 
                 <td style="width:5%;"class=" py-2  px-2  border-b border-solid border-grey-lighter "><a  class="text-red-dark "href="{{route('admin.maintenances.suspendre',$maintenance->id)}}">suspendre</a></td>
                     @endif
