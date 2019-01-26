@@ -9,5 +9,4 @@
     <a href="#" style="border-radius:25px; " class="inline-block px-4  py-4 border-solid border-blue-light border mb-4 font-bold ">{{auth()->user()->employé->Initials}}</a>
     <a href="{{route('logout')}}" class="block">Deconnexion</a>
     </div>
-
 </div>
