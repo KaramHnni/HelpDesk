@@ -26,5 +26,9 @@ class User extends Authenticatable
 
         return $this->hasOne('\App\Models\Employé','user_id','id');
     }
+    public function Maintenance(){
+
+        return $this->hasOne('\App\Models\Maintenance','user_id','id');
+    }
     
 }
