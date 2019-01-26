@@ -23,6 +23,7 @@ class CreateController extends Controller
                 $user->password = bcrypt($request->password);
                 $user->created_at = now();
                 $user->updated_at = now();
+                $user->type = 1;
                 $user->save();
                 $maintenance = new Maintenance;
                 $maintenance->user_id = $user->id;
